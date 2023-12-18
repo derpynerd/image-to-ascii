@@ -1,9 +1,9 @@
 let thonk;
-const charRamp = " .:-=+*#%@".split('').reverse().join('');
+const charRamp = " .:-=+*#%@";
 const charRampTwo = "$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. ";
 
 function preload() {
-  thonk = loadImage('thonk-45x60.jpg'); 
+  thonk = loadImage('resources/thonk-48x64.jpg');
 }
 
 function setup() {
@@ -29,7 +29,7 @@ function draw() {
         const avg = (r + g + b) / 3;
  
         const len = charRamp.length;
-        const charIndex = floor(map(avg, 0, 255, 0, len));
+        const charIndex = floor(map(avg, 0, 255, len, 0));
 
         text(charRamp.charAt(charIndex), i * w, j * h);
     }

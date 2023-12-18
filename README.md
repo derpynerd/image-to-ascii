@@ -13,6 +13,10 @@
 
 ---
 
+>![Thinking man demo](image.png)  
+Demo run on random image
+
+
 ```
 Still a work in progress (WIP)
 ```
